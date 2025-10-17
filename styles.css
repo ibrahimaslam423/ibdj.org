@@ -1,15 +1,26 @@
+body {
+    /* background-color: black;
+    color: white; */
+}
+
 .ibdj {
-    font-family: "Coral Pixels", sans-serif
+    font-family: "Coral Pixels", sans-serif;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: green;
 }
 
 h2 {
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
 }
 
 p {
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
 }
 
 a {
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
 }
