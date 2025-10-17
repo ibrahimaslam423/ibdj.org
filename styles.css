@@ -1,26 +1,93 @@
+/* Ensure the body takes up the full height of the viewport */
+html, body {
+    height: 100%; /* Make the body and html elements span the full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Default (light theme) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a73e8;
+    --ascii-color: green;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #bb86fc;
+    --ascii-color: lightgreen;
+}
+
+/* Apply theme variables */
 body {
-    /* background-color: black;
-    color: white; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    align-items: center; /* Centers content horizontally */
 }
 
-.ibdj {
-    font-family: "Coral Pixels", sans-serif;
+/* Main content should take up all available space */
+main {
+    flex: 1; /* Push the footer to the bottom if content is short */
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10px;
-    color: green;
+/* Footer styles */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 10px; /* Add some padding */
+}
+
+/* Remove bullet points from list items */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Existing styles */
+p {
+    font-family: "Inter", sans-serif;
 }
 
 h2 {
     font-family: "Inter", sans-serif;
 }
 
-p {
-    font-family: "Inter", sans-serif;
-}
-
 a {
     font-family: "Inter", sans-serif;
+    color: var(--link-color);
+}
+
+/* Hide the h1 text visually but keep it accessible for SEO and screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Style the ASCII art */
+.ascii-art {
+    font-family: monospace; /* Use a monospace font for ASCII art */
+    font-size: 6px; /* Adjust font size as needed */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    text-align: center; /* Center the ASCII art */
+    white-space: pre; /* Preserve the formatting of the ASCII art */
+    color: var(--ascii-color);
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+.ibdj {
+    color: green;
 }
