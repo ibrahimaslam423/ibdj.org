@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website for the electronic music producer and DJ ibdj">
-    <meta name="keywords" content="ibdj, musician, music, artist, electronic music, dj, dance music">
+    <meta name="description" content="Website for the electronic music producer and DJ ibdj">
+    <meta name="keywords" content="ibdj, musician, music, artist, electronic music, dj, dance music, chattanooga, tennessee">
     <title>ibdj.org</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,10 @@
     <script defer src="theme.js"></script>
 </head>
 <body>
-    <header>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <header role="banner">
         <h1 class="visually-hidden">ibdj</h1>
-        <pre class="ascii-art">
-                                                     
+        <pre class="ascii-art" aria-hidden="true">                                                     
        bbbbbbbb                        dddddddd      
   iiii b::::::b                        d::::::d jjjj 
  i::::ib::::::b                        d::::::dj::::j
@@ -44,28 +44,34 @@ iiiiiiiibbbbbbbbbbbbbbbb      ddddddddd   dddddj::::j
 
         </pre>
     </header>
-    <main>
+    <main id="main-content" role="main">
         <h2>links regarding or related to ibdj:</h2>
-        <ul>
-            <li><a href="https://soundcloud.com/ibdj301">soundcloud</a></li>
-            <li><a href="https://www.instagram.com/iibbddjj/">instagram</a></li>
-            <li><a href="https://ibdj.org">ibdj.org</a></li>
-        </ul>
+        <nav aria-label="Links related to ibdj">
+            <ul>
+                <li><a href="https://soundcloud.com/ibdj301" aria-label="Visit ibdj's soundcloud profile">soundcloud</a></li>
+                <li><a href="https://www.instagram.com/iibbddjj/" aria-label="Visit ibdj's instagram account">instagram</a></li>
+                <li><a href="https://ibdj.org" aria-label="Visit this exact same website (joke)">ibdj.org</a></li>
+            </ul>
+        </nav>
         <h2>links to my friends:</h2>
-        <ul>
-            <li><a href="https://jaktheact.com/">Jak the Act</a></li>
-            <li><a href="https://soundcloud.com/thepattyspice">PattySpice</a></li>
-            <li><a href="https://soundcloud.com/user625073328">C2</a></li>
-            <li><a href="https://soundcloud.com/massimo-673042272">MASSIMO</a></li>
-            <li><a href="https://future-everything.com/">Future-Everything (record label)</a></li>
-        </ul>
+        <nav aria-label="Links to ibdj's friends things">
+            <ul>
+                <li><a href="https://jaktheact.com/" aria-label="Visit Jak the Act's website">Jak the Act</a></li>
+                <li><a href="https://soundcloud.com/thepattyspice" aria-label="Visit patty spice's soundcloud profile">PattySpice</a></li>
+                <li><a href="https://soundcloud.com/user625073328" aria-albel="Visit C2's soundcloud profile">C2</a></li>
+                <li><a href="https://soundcloud.com/massimo-673042272" aria-label="Visit MASSIMO's soundcloud profile">MASSIMO</a></li>
+                <li><a href="https://future-everything.com/" aria-label="Visit the website for the label Future Everything">Future-Everything (record label)</a></li>
+            </ul>
+        </nav>
         <h2>links to other cool stuff:</h2>
-        <ul>
-            <li><a href="https://deejay.tools/">deejay.tools</a></li>
-            <li><a href="https://lazyrecords.app">lazyrecords</a></li>
-        </ul>
+        <nav aria-label="links to things ibdj likes">
+            <ul>
+                <li><a href="https://deejay.tools/" aria-label="Visit the deejay.tools website">deejay.tools</a></li>
+                <li><a href="https://lazyrecords.app" aria-label="Visit the lazy records web application">lazyrecords</a></li>
+            </ul>
+        </nav>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p>contact me at ibdj333@protonmail.com</p>
         <p>last updated: 10/17/2025 8:44pm EST</p>
     </footer>

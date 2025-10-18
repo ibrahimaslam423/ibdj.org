@@ -64,6 +64,11 @@ a {
     color: var(--link-color);
 }
 
+a:focus {
+    outline: 2px solid #ffcc00; /* Add a visible focus outline */
+    outline-offset: 2px;
+}
+
 /* Hide the h1 text visually but keep it accessible for SEO and screen readers */
 .visually-hidden {
     position: absolute;
@@ -88,6 +93,6 @@ a {
     margin-top: 40px;
 }
 
-.ibdj {
-    color: green;
+.skip-link {
+    size: 2px;
 }
