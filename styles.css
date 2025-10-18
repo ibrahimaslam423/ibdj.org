@@ -94,5 +94,25 @@ a:focus {
 }
 
 .skip-link {
-    size: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000; /* Black background for visibility */
+    color: #fff; /* White text for contrast */
+    padding: 8px 16px; /* Add some padding */
+    z-index: 100; /* Ensure it appears above other elements */
+    text-decoration: none; /* Remove underline */
+    clip: rect(0, 0, 0, 0); /* Hide visually */
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link:focus {
+    clip: auto; /* Remove clipping */
+    height: auto;
+    width: auto;
+    white-space: normal;
 }
